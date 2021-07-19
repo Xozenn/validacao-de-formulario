@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/378cd465c9.js" crossorigin="anonymous"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="circle c-1"></div>
+        <div class="circle c-2"></div>
+
+        <div class="form-model">
+            <div class="logo">
+                <i class="fab fa-wpforms"></i>
+            </div>
+            <br>
+            <h1>Cadastro</h1>
+            <br>
+            <!--  <ul>
+                <li>Nenhum campo pode estar vazio</li>
+                <li>Usuário só poderá conter letras e/ou números</li>
+                <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+                <li>Senha precisa ter entre 6 e 12 caracteres</li>
+            </ul>
+
+            <div class="espacamento"></div> -->
+
+            <div class="form">
+                <form action="/" class="formulario">
+                    <div class="lado-lado">
+                        <div>
+                            <p>Nome</p>
+                            <input type="text" class="nome valid">
+                        </div>
+
+                        <div>
+                            <p>Sobrenome</p>
+                            <input type="text" class=" sobrenome valid">
+                        </div>
+                    </div>
+
+                    <div class="gap"></div>
+
+                    <p>CPF</p>
+                    <input type="text" class="cpf valid">
+
+                    <div class="gap"></div>
+
+                    <p>Usuário</p>
+                    <input type="text" class="usuario valid">
+
+                    <div class="gap"></div>
+
+                    <div class="lado-lado">
+                        <div>
+                            <p>Senha</p>
+                            <input type="password" class="senha valid">
+                        </div>
+
+                        <div>
+                            <p>Repetir senha</p>
+                            <input type="password" class="repetir-senha valid">
+                        </div>
+                    </div>
+                    <div class="espacamento"></div>
+
+                    <input type="submit" value="Enviar" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

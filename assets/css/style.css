@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ebf4f2;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #606060;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.circle {
+    background-color: #dfe6eb;
+    border-radius: 100%;
+}
+.c-1 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: -150px;
+}
+.c-2 {
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.form-model {
+    background-color: #fff;
+    border-radius: 13px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: left;
+    z-index: 1;
+    box-shadow: 0 0 30px #ccd2d6;
+    padding: 35px;
+    padding-bottom: 25px;
+}
+.logo i {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 17px;
+    color: #eee;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    background: rgb(21,166,240);
+    background: linear-gradient(90deg, rgba(21,166,240,1) 15%, rgba(45,100,230,1) 93%);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input.submit-button {
+    border-radius: 25px;
+    width: 200px;
+    margin: 10px auto;
+    padding: 13px;
+    background: rgb(21,166,240);
+    background: linear-gradient(90deg, rgba(21,166,240,1) 15%, rgba(45,100,230,1) 93%);
+    box-shadow: 0 7px 5px #ccd2d6;
+    cursor: pointer;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+form input.submit-button:hover {
+    transform: scale(1.1);
+}
+form input {
+    outline: none;
+    padding: 10px;
+    border: none;
+    background-color: #ebf4f2;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #454545;
+    width: 100%;
+}
+form input:focus {
+    box-shadow: 0 0 10px #8c7ffd;
+}
+label {
+    cursor: pointer;
+}
+/* --------------- */
+.espacamento {
+    height: 50px;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "\2022"; /* '*' */
+    color: rgb(21,166,240);
+    display: inline-block; /*precisa pra usar width*/
+    width: 10px; /*espaçamento entre a * e o texto*/
+    font-size: 20px; /*tamanho da **/
+}
+.error-text {
+    color: #c53e3e;
+}
+.lado-lado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 30px;
+}
+.gap { 
+    height: 30px;
+}
